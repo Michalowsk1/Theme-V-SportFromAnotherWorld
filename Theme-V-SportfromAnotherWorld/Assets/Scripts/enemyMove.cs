@@ -15,7 +15,7 @@ public class enemyMove : MonoBehaviour
     void Update()
     {
         if (gameManager.game)
-            enemy.velocity = new Vector2(0.2f, 0) * Random.Range(1f, 15f);
+            enemy.velocity = new Vector2(gameManager.enemySpeed, 0) * Random.Range(1f, 15f);
         else { }
     }
 }
