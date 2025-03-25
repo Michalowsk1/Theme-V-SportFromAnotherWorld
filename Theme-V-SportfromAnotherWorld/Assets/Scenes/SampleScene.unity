@@ -165,7 +165,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 20932461}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MainCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -303,7 +303,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 88584950}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Opponents
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -489,7 +489,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 109250305}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Opponents
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -636,7 +636,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 136250818}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Players
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -851,8 +851,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 45c7c206796c9fa499d77c440ac76617, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: f9e76bd300b4bb54ca2e6899b2596db8, type: 3}
+  m_Color: {r: 0.5924529, g: 0.5924529, b: 0.5924529, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -988,7 +988,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 278851442}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MainCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1024,7 +1024,7 @@ GameObject:
   - component: {fileID: 286677630}
   - component: {fileID: 286677629}
   - component: {fileID: 286677631}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (1)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -1541,7 +1541,7 @@ Transform:
   m_GameObject: {fileID: 423811674}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.4, y: -6.61, z: 7.110787}
+  m_LocalPosition: {x: -8.419998, y: -6.9499984, z: 7.110787}
   m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1588,7 +1588,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 15
-  m_Sprite: {fileID: 21300000, guid: cd70efd12cc92c643862b016e8815bd3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4694af21bb35f814ea9fb5fc4cd1b04d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1821,6 +1821,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &478855136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 478855137}
+  m_Layer: 0
+  m_Name: Spawn (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &478855137
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478855136}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.13, y: -0.00999999, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1732561841}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2074,7 +2105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 566993462}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MainCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2170,8 +2201,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 6128457f3af40c64ab15682ebfd29de8, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 56e5ac8f54211ea49b86a8df6dad2e09, type: 3}
+  m_Color: {r: 0.5924529, g: 0.5924529, b: 0.5924529, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2254,8 +2285,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 15843754740918a42be49ddff3db7e40, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 07b7d3f64c0f2414795276f5269ce76c, type: 3}
+  m_Color: {r: 0.5924529, g: 0.5924529, b: 0.5924529, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2491,8 +2522,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 562ee7e265c14614e88dbe8004e454e6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 3e3509ca60fe96f4c98a2a5e8f340329, type: 3}
+  m_Color: {r: 0.5924529, g: 0.5924529, b: 0.5924529, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2515,7 +2546,7 @@ GameObject:
   - component: {fileID: 784212643}
   - component: {fileID: 784212642}
   - component: {fileID: 784212641}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -2687,7 +2718,7 @@ GameObject:
   - component: {fileID: 804541402}
   - component: {fileID: 804541401}
   - component: {fileID: 804541403}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (2)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -2929,7 +2960,7 @@ GameObject:
   - component: {fileID: 867165771}
   - component: {fileID: 867165770}
   - component: {fileID: 867165769}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (2)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -3235,7 +3266,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 982794104}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Opponents
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3735,7 +3766,7 @@ GameObject:
   - component: {fileID: 1114020121}
   - component: {fileID: 1114020120}
   - component: {fileID: 1114020119}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -4126,6 +4157,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1182520404}
   m_CullTransparentMesh: 1
+--- !u!1 &1189539443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1189539444}
+  m_Layer: 0
+  m_Name: Spawn (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1189539444
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189539443}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.87, y: -0.00999999, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1732561841}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1214333957
 GameObject:
   m_ObjectHideFlags: 0
@@ -4268,7 +4330,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1220241254}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Opponents
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4304,7 +4366,7 @@ GameObject:
   - component: {fileID: 1226236360}
   - component: {fileID: 1226236359}
   - component: {fileID: 1226236358}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -4696,8 +4758,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 2205e995076a9364daf58c12115aa62a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: a030f6c39e97b334e829021f2130a504, type: 3}
+  m_Color: {r: 0.5924529, g: 0.5924529, b: 0.5924529, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4780,8 +4842,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 6dbfc0bfa21994044be53e0e6639c38d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 5e63602a637737d479fa754c6b1d46cf, type: 3}
+  m_Color: {r: 0.5924529, g: 0.5924529, b: 0.5924529, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5069,7 +5131,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1301920848}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Players
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5140,7 +5202,7 @@ GameObject:
   - component: {fileID: 1344510265}
   - component: {fileID: 1344510264}
   - component: {fileID: 1344510263}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -5312,7 +5374,7 @@ GameObject:
   - component: {fileID: 1344679488}
   - component: {fileID: 1344679487}
   - component: {fileID: 1344679486}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -5779,6 +5841,37 @@ MonoBehaviour:
   nextLevelButton: {fileID: 1444179076}
   playAgainButton: {fileID: 1880058439}
   timeline: {fileID: 1011646390}
+--- !u!1 &1445450101
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1445450102}
+  m_Layer: 0
+  m_Name: Spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1445450102
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445450101}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.02, y: -0.01, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1732561841}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1494300825
 GameObject:
   m_ObjectHideFlags: 0
@@ -6008,8 +6101,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: b1abf5375a4b3074e9d4822b026e3cb5, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b141bbf2cdea43c4c8c98d9f2888381e, type: 3}
+  m_Color: {r: 0.5924529, g: 0.5924529, b: 0.5924529, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6045,7 +6138,7 @@ Transform:
   m_GameObject: {fileID: 1575203681}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.819999, y: -7.6300006, z: 7.110787}
+  m_LocalPosition: {x: 5.8, y: -7.97, z: 7.110787}
   m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6092,7 +6185,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 15
-  m_Sprite: {fileID: 21300000, guid: cd70efd12cc92c643862b016e8815bd3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4694af21bb35f814ea9fb5fc4cd1b04d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6116,7 +6209,7 @@ GameObject:
   - component: {fileID: 1578290792}
   - component: {fileID: 1578290791}
   - component: {fileID: 1578290790}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (1)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -6892,7 +6985,7 @@ GameObject:
   - component: {fileID: 1709160657}
   - component: {fileID: 1709160656}
   - component: {fileID: 1709160659}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -7325,6 +7418,64 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1732561840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1732561841}
+  - component: {fileID: 1732561842}
+  m_Layer: 0
+  m_Name: beerSpawns
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1732561841
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732561840}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.71, y: -1, z: -0.10544183}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1445450102}
+  - {fileID: 1189539444}
+  - {fileID: 1879356910}
+  - {fileID: 478855137}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1732561842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732561840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcee5fb6d6ab7a446b43abd6abcf4b54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beers:
+  - {fileID: 8405853459603355198, guid: a3b658ee0c6465e4394465329cc86d04, type: 3}
+  - {fileID: 7087988798559196945, guid: 1db9c3b0142e63645b36e44ae4d2908a, type: 3}
+  - {fileID: 7915578984169024303, guid: b15c1577b269dc045b4a961a5d60aa93, type: 3}
+  spawner:
+  - {fileID: 1445450102}
+  - {fileID: 1189539444}
+  - {fileID: 1879356910}
+  - {fileID: 478855137}
+  timer: 0
 --- !u!1 &1741903716
 GameObject:
   m_ObjectHideFlags: 0
@@ -7621,7 +7772,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1744817635}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Players
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7912,7 +8063,7 @@ GameObject:
   - component: {fileID: 1797490362}
   - component: {fileID: 1797490361}
   - component: {fileID: 1797490360}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -8309,6 +8460,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1879356909
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1879356910}
+  m_Layer: 0
+  m_Name: Spawn (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1879356910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879356909}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.65, y: -0.00999999, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1732561841}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1880058439
 GameObject:
   m_ObjectHideFlags: 0
@@ -9038,7 +9220,7 @@ GameObject:
   - component: {fileID: 1942801017}
   - component: {fileID: 1942801016}
   - component: {fileID: 1942801018}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -9275,8 +9457,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 80950c0f889710f4884d0fe12cfd5186, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: e8d9d4e3385573948969a2c03833360d, type: 3}
+  m_Color: {r: 0.5924529, g: 0.5924529, b: 0.5924529, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9636,7 +9818,7 @@ Transform:
   m_GameObject: {fileID: 1992914555}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.25, y: 0.08, z: 7.110787}
+  m_LocalPosition: {x: -2.269999, y: -0.25999826, z: 7.110787}
   m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9683,7 +9865,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 15
-  m_Sprite: {fileID: 21300000, guid: cd70efd12cc92c643862b016e8815bd3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4694af21bb35f814ea9fb5fc4cd1b04d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9804,8 +9986,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 13ba7aaab019d7745833cb27737ff19c, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 1f564de2d5242574eb9e841677ef29fa, type: 3}
+  m_Color: {r: 0.5924529, g: 0.5924529, b: 0.5924529, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9888,8 +10070,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: cde40cc4ecd4ea743b1acc219d54ae3a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 2825d8427b5c21345b998fbc3eaa8b4e, type: 3}
+  m_Color: {r: 0.5924529, g: 0.5924529, b: 0.5924529, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10368,7 +10550,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2116766854}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MainCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10400,7 +10582,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2118047306}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Players
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10497,8 +10679,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 71e4a92a85dec224ab0ccd2521d32c7b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 936ee6d024a58da46a7d5550868c8504, type: 3}
+  m_Color: {r: 0.5924529, g: 0.5924529, b: 0.5924529, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10521,7 +10703,7 @@ GameObject:
   - component: {fileID: 2145907694}
   - component: {fileID: 2145907693}
   - component: {fileID: 2145907692}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (2)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -10780,3 +10962,4 @@ SceneRoots:
   - {fileID: 1278423125}
   - {fileID: 1629940407}
   - {fileID: 1885500818}
+  - {fileID: 1732561841}
