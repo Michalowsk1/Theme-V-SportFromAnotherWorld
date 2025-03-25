@@ -13,6 +13,10 @@ public class playerMove : MonoBehaviour
     [SerializeField] GameObject button2Tick;
     [SerializeField] GameObject button3Tick;
 
+
+    [SerializeField] GameObject green;
+    [SerializeField] GameObject red;
+
     bool firstKey = false;
     bool secondkey = false;
     bool thirdkey = false;
@@ -25,6 +29,9 @@ public class playerMove : MonoBehaviour
         button1Tick.SetActive(false);
         button2Tick.SetActive(false);
         button3Tick.SetActive(false);
+
+        green.SetActive(false);
+        red.SetActive(false);
     }
 
     // Update is called once per frame
@@ -46,7 +53,7 @@ public class playerMove : MonoBehaviour
 
         if(timer >= 20)
         {
-            speed -= 0.1f;
+            speed -= 0.15f;
             timer = 0;
         }
 
@@ -68,6 +75,7 @@ public class playerMove : MonoBehaviour
 
             if(firstKey && Input.GetKeyDown(KeyCode.P))
             {
+                StartCoroutine(correct());
                 speed += 0.5f;
                 button1Tick.SetActive(false);
 
@@ -92,6 +100,12 @@ public class playerMove : MonoBehaviour
                 button2Tick.SetActive(true);
             }
 
+            else if (firstKey && (Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.D))) //WRONG BUTTON
+            {
+                speed -= 0.1f;
+                StartCoroutine(Incorrect());
+            }
+
             if (firstKey && secondkey && Input.GetKeyDown(KeyCode.D))
             {
                 speed += 1f;
@@ -101,7 +115,102 @@ public class playerMove : MonoBehaviour
                 secondkey = false;
             }
 
+            else if (firstKey && secondkey && (Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.R))) //WRONG BUTTON
+            {
+                speed -= 0.1f;
+                StartCoroutine(Incorrect());
+            }
+
 
         }
+
+        if (gameManager.level == 3) //Drunk Round = punishes for wrong input , camera rotates
+        {
+            if (Input.GetKeyDown(KeyCode.L))
+            {
+                firstKey = true;
+                button1Tick.SetActive(true);
+            }
+
+            if (firstKey && Input.GetKeyDown(KeyCode.O))
+            {
+                secondkey = true;
+                button2Tick.SetActive(true);
+            }
+
+            else if (firstKey && (Input.GetKeyDown(KeyCode.L) || Input.GetKeyDown(KeyCode.I))) //WRONG BUTTON
+            {
+                speed -= 0.1f;
+                StartCoroutine(Incorrect());
+            }
+
+            if (firstKey && secondkey && Input.GetKeyDown(KeyCode.I))
+            {
+                speed += 1f;
+                button1Tick.SetActive(false);
+                firstKey = false;
+                button2Tick.SetActive(false);
+                secondkey = false;
+            }
+            else if (firstKey && secondkey && (Input.GetKeyDown(KeyCode.O) || Input.GetKeyDown(KeyCode.L))) //WRONG BUTTON
+            {
+                speed -= 0.1f;
+                StartCoroutine(Incorrect());
+            }
+
+
+        }
+
+        if (gameManager.level == 4) //Drunk Round = punishes for wrong input, camera rotates and shrinks and increases
+        {
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                firstKey = true;
+                button1Tick.SetActive(true);
+            }
+
+            if (firstKey && Input.GetKeyDown(KeyCode.Z))
+            {
+                secondkey = true;
+                button2Tick.SetActive(true);
+            }
+
+            else if (firstKey && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.N))) //WRONG BUTTON
+            {
+                speed -= 0.1f;
+                StartCoroutine(Incorrect());
+            }
+
+            if (firstKey && secondkey && Input.GetKeyDown(KeyCode.N))
+            {
+                speed += 1f;
+                button1Tick.SetActive(false);
+                firstKey = false;
+                button2Tick.SetActive(false);
+                secondkey = false;
+            }
+
+            else if (firstKey && secondkey && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Z))) //WRONG BUTTON
+            {
+                speed -= 0.1f;
+                StartCoroutine(Incorrect());
+            }
+
+
+        }
+    }
+
+    IEnumerator correct()
+    {
+        green.SetActive(true);
+        yield return new WaitForSeconds(0.01f);
+        green.SetActive(false);
+    }
+
+    IEnumerator Incorrect()
+    {
+        red.SetActive(true);
+        yield return new WaitForSeconds(0.01f);
+        red.SetActive(false);
     }
 }

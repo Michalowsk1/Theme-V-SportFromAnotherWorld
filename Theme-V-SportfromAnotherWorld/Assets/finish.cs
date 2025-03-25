@@ -29,13 +29,16 @@ public class finish : MonoBehaviour
             Time.timeScale = 0;
             playerMove.speed = 0;
             gameManager.enemySpeed = 0;
+
         }
 
         if(collision.gameObject.tag == "enemy")
         {
             DefeatText.SetActive(true);
             playAgainButton.SetActive(true);
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
+            Debug.Log("FAIL");
+
         }
     }
 
@@ -43,10 +46,7 @@ public class finish : MonoBehaviour
 
     public void PlayAgain()
     {
-        SceneManager.LoadScene("Sample Scene");
-        playAgainButton.SetActive(false);
-        DefeatText.SetActive(false);
-        Time.timeScale = 1;
+        SceneManager.LoadScene("SampleScene");
     }
 
     public void NextLevel()
