@@ -10,7 +10,10 @@ public class gameManager : MonoBehaviour
     [SerializeField] GameObject Drunk1Camera;
     [SerializeField] GameObject Drunk2Camera;
     [SerializeField] GameObject Drunk3Camera;
-    [SerializeField] GameObject timeLine;
+    [SerializeField] GameObject timeLine1;
+    [SerializeField] GameObject timeLine2;
+    [SerializeField] GameObject timeLine3;
+    [SerializeField] GameObject timeLine4;
     [SerializeField] TextMesh speedText;
 
     [SerializeField] GameObject level1Keys;
@@ -35,7 +38,10 @@ public class gameManager : MonoBehaviour
     {
         Time.timeScale = 1;
         camera.SetActive(false);
-        timeLine.SetActive(false);
+        timeLine1.SetActive(false);
+        timeLine2.SetActive(false);
+        timeLine3.SetActive(false);
+        timeLine4.SetActive(false);
         Drunk1Camera.SetActive(false);
         Drunk2Camera.SetActive(false);
         Drunk3Camera.SetActive(false);
@@ -59,12 +65,11 @@ public class gameManager : MonoBehaviour
     void Update()
     {
         speedText.text = "Speed:" + playerMove.speed;
-        BeginGame();
         switch (level)
         {
             case 1:
-                StartCoroutine(introScene());
-
+                timeLine1.SetActive (true);
+                BeginGame();
                 camera.SetActive (true);
                 level1.SetActive(true);
                 speedText.transform.position = new Vector2(-8, -3);
@@ -78,6 +83,7 @@ public class gameManager : MonoBehaviour
 
 
             case 2:
+                timeLine2.SetActive(true);
                 BeginGame();
                 level1.SetActive(false);
                 level2.SetActive(true);
@@ -93,7 +99,8 @@ public class gameManager : MonoBehaviour
                 break;
 
             case 3:
-
+                timeLine3.SetActive(true);
+                BeginGame();
                 level2.SetActive(false);
                 level3.SetActive(true);
 
@@ -109,7 +116,8 @@ public class gameManager : MonoBehaviour
                 break;
 
             case 4:
-
+                timeLine4.SetActive(true);
+                BeginGame();
                 level3.SetActive(false);
                 level4.SetActive(true);
 
@@ -124,25 +132,6 @@ public class gameManager : MonoBehaviour
 
                 break;
         }
-    }
-
-
-    IEnumerator introScene()
-    {
-        timer++;
-        timeLine.SetActive(true);
-        if(timer == 1500)
-        {
-            Debug.Log("FINISHED");
-        }
-        yield return null;
-    }
-
-    
-
-    IEnumerator incorrect()
-    {
-        yield return new WaitForSeconds(0.25f);
     }
 
 

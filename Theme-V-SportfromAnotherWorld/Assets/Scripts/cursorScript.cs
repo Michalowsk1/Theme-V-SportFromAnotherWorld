@@ -30,15 +30,15 @@ public class cursorScript : MonoBehaviour
                     break;
 
                 case 1:
-                    randomSpeed = Random.Range(-2f, 2f);
+                    randomSpeed = Random.Range(-1f, 2f);
                     break;
 
                 case 2:
-                    randomSpeed = Random.Range(-5f, 5f);
+                    randomSpeed = Random.Range(-1f, 5f);
                     break;
 
                 case 3:
-                    randomSpeed = Random.Range(-10f, 10f);
+                    randomSpeed = Random.Range(-1f, 10f);
                     break;
             }
 
