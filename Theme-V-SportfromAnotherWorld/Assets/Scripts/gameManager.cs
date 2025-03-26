@@ -84,7 +84,7 @@ public class gameManager : MonoBehaviour
                 camera.SetActive (false);
                 Drunk1Camera.SetActive(true);
 
-                enemySpeed = 0.05f;
+                enemySpeed = 0.1f;
                 level1Keys.SetActive(false);
                 level2Keys.SetActive(true);
                 level3Keys.SetActive(false);
@@ -100,7 +100,7 @@ public class gameManager : MonoBehaviour
                 Drunk1Camera.SetActive (false);
                 Drunk2Camera.SetActive(true);
 
-                enemySpeed = 0.075f;
+                enemySpeed = 0.125f;
                 level1Keys.SetActive(false);
                 level2Keys.SetActive(false);
                 level3Keys.SetActive(true);
@@ -116,7 +116,7 @@ public class gameManager : MonoBehaviour
                 Drunk2Camera.SetActive (false);
                 Drunk3Camera.SetActive(true);
 
-                enemySpeed = 0.1f;
+                enemySpeed = 0.125f;
                 level1Keys.SetActive(false);
                 level2Keys.SetActive(false);
                 level3Keys.SetActive(false);

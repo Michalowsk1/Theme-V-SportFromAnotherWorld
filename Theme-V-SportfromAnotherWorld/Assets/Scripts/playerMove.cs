@@ -51,9 +51,9 @@ public class playerMove : MonoBehaviour
     {
         timer++;
 
-        if(timer >= 20)
+        if(timer >= 3)
         {
-            speed -= 0.15f;
+            speed -= 0.25f;
             timer = 0;
         }
 
@@ -76,7 +76,7 @@ public class playerMove : MonoBehaviour
             if(firstKey && Input.GetKeyDown(KeyCode.P))
             {
                 StartCoroutine(correct());
-                speed += 0.5f;
+                speed += 5f;
                 button1Tick.SetActive(false);
 
                 button2Tick.SetActive(true);
@@ -102,13 +102,13 @@ public class playerMove : MonoBehaviour
 
             else if (firstKey && (Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.D))) //WRONG BUTTON
             {
-                speed -= 0.1f;
+                speed -= 1f;
                 StartCoroutine(Incorrect());
             }
 
             if (firstKey && secondkey && Input.GetKeyDown(KeyCode.D))
             {
-                speed += 1f;
+                speed += 5f;
                 button1Tick.SetActive(false);
                 firstKey = false;
                 button2Tick.SetActive(false);
@@ -117,7 +117,7 @@ public class playerMove : MonoBehaviour
 
             else if (firstKey && secondkey && (Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.R))) //WRONG BUTTON
             {
-                speed -= 0.1f;
+                speed -= 1f;
                 StartCoroutine(Incorrect());
             }
 
@@ -140,13 +140,13 @@ public class playerMove : MonoBehaviour
 
             else if (firstKey && (Input.GetKeyDown(KeyCode.L) || Input.GetKeyDown(KeyCode.I))) //WRONG BUTTON
             {
-                speed -= 0.1f;
+                speed -= 1f;
                 StartCoroutine(Incorrect());
             }
 
             if (firstKey && secondkey && Input.GetKeyDown(KeyCode.I))
             {
-                speed += 1f;
+                speed += 4.5f;
                 button1Tick.SetActive(false);
                 firstKey = false;
                 button2Tick.SetActive(false);
@@ -154,7 +154,7 @@ public class playerMove : MonoBehaviour
             }
             else if (firstKey && secondkey && (Input.GetKeyDown(KeyCode.O) || Input.GetKeyDown(KeyCode.L))) //WRONG BUTTON
             {
-                speed -= 0.1f;
+                speed -= 1f;
                 StartCoroutine(Incorrect());
             }
 
@@ -177,13 +177,13 @@ public class playerMove : MonoBehaviour
 
             else if (firstKey && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.N))) //WRONG BUTTON
             {
-                speed -= 0.1f;
+                speed -= 1f;
                 StartCoroutine(Incorrect());
             }
 
             if (firstKey && secondkey && Input.GetKeyDown(KeyCode.N))
             {
-                speed += 1f;
+                speed += 5f;
                 button1Tick.SetActive(false);
                 firstKey = false;
                 button2Tick.SetActive(false);
@@ -192,7 +192,7 @@ public class playerMove : MonoBehaviour
 
             else if (firstKey && secondkey && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Z))) //WRONG BUTTON
             {
-                speed -= 0.1f;
+                speed -= 1f;
                 StartCoroutine(Incorrect());
             }
 

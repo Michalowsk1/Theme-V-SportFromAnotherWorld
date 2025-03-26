@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 8513257241913253859}
   - component: {fileID: 3099316773669490523}
   - component: {fileID: 1428278168279628595}
+  - component: {fileID: -1150439781243507332}
   m_Layer: 0
   m_Name: New Piskel-3.png (4)
-  m_TagString: Untagged
+  m_TagString: beer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,3 +159,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
+--- !u!114 &-1150439781243507332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7915578984169024303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01abcaf1185470340b1c4343840d6cb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
