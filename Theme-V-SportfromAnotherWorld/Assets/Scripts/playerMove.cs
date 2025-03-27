@@ -103,7 +103,6 @@ public class playerMove : MonoBehaviour
             else if (firstKey && (Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.D))) //WRONG BUTTON
             {
                 speed -= 1f;
-                StartCoroutine(Incorrect());
             }
 
             if (firstKey && secondkey && Input.GetKeyDown(KeyCode.D))
@@ -118,7 +117,7 @@ public class playerMove : MonoBehaviour
             else if (firstKey && secondkey && (Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.R))) //WRONG BUTTON
             {
                 speed -= 1f;
-                StartCoroutine(Incorrect());
+
             }
 
 
@@ -141,7 +140,7 @@ public class playerMove : MonoBehaviour
             else if (firstKey && (Input.GetKeyDown(KeyCode.L) || Input.GetKeyDown(KeyCode.I))) //WRONG BUTTON
             {
                 speed -= 1f;
-                StartCoroutine(Incorrect());
+
             }
 
             if (firstKey && secondkey && Input.GetKeyDown(KeyCode.I))
@@ -155,7 +154,7 @@ public class playerMove : MonoBehaviour
             else if (firstKey && secondkey && (Input.GetKeyDown(KeyCode.O) || Input.GetKeyDown(KeyCode.L))) //WRONG BUTTON
             {
                 speed -= 1f;
-                StartCoroutine(Incorrect());
+
             }
 
 
@@ -178,7 +177,6 @@ public class playerMove : MonoBehaviour
             else if (firstKey && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.N))) //WRONG BUTTON
             {
                 speed -= 1f;
-                StartCoroutine(Incorrect());
             }
 
             if (firstKey && secondkey && Input.GetKeyDown(KeyCode.N))
@@ -193,7 +191,6 @@ public class playerMove : MonoBehaviour
             else if (firstKey && secondkey && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Z))) //WRONG BUTTON
             {
                 speed -= 1f;
-                StartCoroutine(Incorrect());
             }
 
 

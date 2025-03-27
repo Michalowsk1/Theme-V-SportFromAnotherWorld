@@ -7,6 +7,7 @@ public class gameManager : MonoBehaviour
 {
     public int timer = 0;
     [SerializeField] GameObject camera;
+    [SerializeField] GameObject chugCursor;
     [SerializeField] GameObject Drunk1Camera;
     [SerializeField] GameObject Drunk2Camera;
     [SerializeField] GameObject Drunk3Camera;
@@ -14,6 +15,7 @@ public class gameManager : MonoBehaviour
     [SerializeField] GameObject timeLine2;
     [SerializeField] GameObject timeLine3;
     [SerializeField] GameObject timeLine4;
+    [SerializeField] GameObject timeLine5;
     [SerializeField] TextMesh speedText;
 
     [SerializeField] GameObject level1Keys;
@@ -25,6 +27,9 @@ public class gameManager : MonoBehaviour
     [SerializeField] GameObject level2;
     [SerializeField] GameObject level3;
     [SerializeField] GameObject level4;
+    [SerializeField] GameObject level5;
+    [SerializeField] GameObject level6;
+
 
 
 
@@ -42,6 +47,7 @@ public class gameManager : MonoBehaviour
         timeLine2.SetActive(false);
         timeLine3.SetActive(false);
         timeLine4.SetActive(false);
+        timeLine5.SetActive(false);
         Drunk1Camera.SetActive(false);
         Drunk2Camera.SetActive(false);
         Drunk3Camera.SetActive(false);
@@ -55,6 +61,10 @@ public class gameManager : MonoBehaviour
         level2.SetActive(false);
         level3.SetActive(false);
         level4.SetActive(false);
+        level5.SetActive(false);
+        level6.SetActive(false);
+
+        chugCursor.SetActive(true);
 
         speedText.transform.position = new Vector2(100, 0);
         level = 1;
@@ -107,7 +117,7 @@ public class gameManager : MonoBehaviour
                 Drunk1Camera.SetActive (false);
                 Drunk2Camera.SetActive(true);
 
-                enemySpeed = 0.125f;
+                enemySpeed = 0.1f;
                 level1Keys.SetActive(false);
                 level2Keys.SetActive(false);
                 level3Keys.SetActive(true);
@@ -124,11 +134,26 @@ public class gameManager : MonoBehaviour
                 Drunk2Camera.SetActive (false);
                 Drunk3Camera.SetActive(true);
 
-                enemySpeed = 0.125f;
+                enemySpeed = 0.1f;
                 level1Keys.SetActive(false);
                 level2Keys.SetActive(false);
                 level3Keys.SetActive(false);
                 level4Keys.SetActive(true);
+
+                break;
+
+             case 5:
+                level4.SetActive (false);
+                chugCursor.SetActive (false);
+                timeLine5.SetActive(true);
+                Drunk3Camera.SetActive (false);
+                camera.SetActive(true);
+                StartCoroutine(Cutscene());
+                break;
+
+             case 6:
+                level5.SetActive (false);
+                level6.SetActive(true);
 
                 break;
         }
@@ -143,4 +168,11 @@ public class gameManager : MonoBehaviour
         }
     }
 
+    IEnumerator Cutscene()
+    {
+        level5.SetActive(true);
+        timeLine5.SetActive(true);
+        yield return new WaitForSeconds(24);
+        level++;
+    }
 }
