@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class cursorScript : MonoBehaviour
 {
-    public float followSpeed = 0.1f;
     [SerializeField] GameObject[] beers;
     int beerlevel;
     float randomSpeed;
@@ -19,7 +18,7 @@ public class cursorScript : MonoBehaviour
     void Update()
     {
         Vector2 beerPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        transform.position = Vector2.Lerp(transform.position, beerPosition, followSpeed);
+        transform.position = Vector2.Lerp(transform.position, beerPosition, 0.1f);
         beers[beerlevel].SetActive(true);
 
         if (DrinkingBeer())
